@@ -5,7 +5,7 @@ export const Wrapper = styled.button`
   background: inherit;
   color: #bfaa9c;
   font-size: 1em;
-  margin: 1em;
+  margin: 1em 1em 0;
   padding: 0.25em 1em;
   height: 40px;
   border: 2px solid #bfaa9c;

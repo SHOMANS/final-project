@@ -25,11 +25,11 @@ const Icons = styled.div`
 `;
 
 const icon = [
-  { ic: ["fab", "facebook-f"], ref: "https://facebock.com" },
-  { ic: ["fab", "instagram"], ref: "https://instagram.com" },
-  { ic: ["fab", "twitter"], ref: "https://twitter.com" },
-  { ic: ["fab", "youtube"], ref: "https://youtube.com" },
-  { ic: ["fab", "soundcloud"], ref: "https://soundcloud.com" },
+  { ic: ["fab", "facebook-f"], ref: "https://www.facebook.com/" },
+  { ic: ["fab", "instagram"], ref: "https://www.instagram.com" },
+  { ic: ["fab", "twitter"], ref: "https://www.twitter.com" },
+  { ic: ["fab", "youtube"], ref: "https://www.youtube.com" },
+  { ic: ["fab", "soundcloud"], ref: "https://www.soundcloud.com" },
 ];
 
 export default function Footer() {
@@ -41,8 +41,8 @@ export default function Footer() {
           const info = i;
           const { ic, ref } = info;
           return (
-            <a href={ref}>
-              <FontAwesomeIcon icon={ic} />
+            <a key={ic} href={ref} target="_blanck">
+              <FontAwesomeIcon key={ic} icon={ic} />
             </a>
           );
         })}

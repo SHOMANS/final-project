@@ -10,7 +10,7 @@ export const Wrapper = styled.nav`
   z-index: 9999;
   top: 0;
   left: 0;
-  background-color: ${(props) => (props.color ? "#00000088" : "#24150b")};
+  background-color: ${(props) => (props.BGcolor ? "#00000088" : "#24150b")};
   & .dis-flex {
     display: flex;
   }
@@ -22,6 +22,7 @@ export const Wrapper = styled.nav`
 
   & .mars-name {
     font-size: 50px;
+    margin-top: 5px;
   }
 
   & .nav-list {
@@ -29,6 +30,7 @@ export const Wrapper = styled.nav`
     display: flex;
     font-size: 20px;
     margin-top: 30px;
+    margin-bottom: 19px;
   }
 
   & .nav-list li {

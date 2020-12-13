@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import NavBar from "../../components/NavBar";
 import Footer from "../../components/Footer";
 import * as F from "../../components/Form";
@@ -6,6 +6,9 @@ import CGuitar from "./CGuitar.jpg";
 import * as S from "./style";
 
 export default function LogInPage() {
+  useEffect(() => {
+    document.title = "mars - Login";
+  });
   return (
     <div>
       <NavBar />

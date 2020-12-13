@@ -14,7 +14,7 @@ const nav = [
 export default function NavBar(props) {
   const { color } = props;
   return (
-    <S.Wrapper className="nav-bar" color={color}>
+    <S.Wrapper className="nav-bar" BGcolor={color}>
       <div className="dis-flex">
         <Link to="/">
           <h1 className="mars-name">Mars</h1>
@@ -24,8 +24,8 @@ export default function NavBar(props) {
             const na = n;
             const { path, name } = na;
             return (
-              <Link to={path}>
-                <li>{name}</li>
+              <Link to={path} key={name}>
+                <li key={name}>{name}</li>
               </Link>
             );
           })}
@@ -33,10 +33,10 @@ export default function NavBar(props) {
       </div>
       <div>
         <Link to="/SignUp">
-          <Button btnClass="normal-btn" btnContent="Sign Up" type="button" />
+          <Button btnClass="normal-btn" content="Sign Up" type="button" />
         </Link>
         <Link to="Login">
-          <Button btnClass="normal-btn" btnContent="Login" type="button" />
+          <Button btnClass="normal-btn" content="Login" type="button" />
         </Link>
       </div>
     </S.Wrapper>

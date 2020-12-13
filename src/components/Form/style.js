@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.form`
   width: 50%;
   background-color: #c4c4c4;
   box-shadow: -10px -50px 50px #c4c4c4, 10px -50px 50px #c4c4c4;
